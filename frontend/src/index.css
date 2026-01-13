@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+* {
+     font-family: "Outfit", sans-serif;
+}
+
+h1, h2, h3 {
+     font-family: "Bebas Neue", sans-serif;
+}
+
+.special-font {
+     font-family: "Bebas Neue", sans-serif;
+}
