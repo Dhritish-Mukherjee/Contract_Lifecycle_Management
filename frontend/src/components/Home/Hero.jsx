@@ -14,7 +14,7 @@ const Hero = () => {
         <p className='text-sm sm:text-xl sm:w-[75%] text-center text-neutral-500'>
           Create, review, analyze and verify contracts with enterprise-grade security, AI powered insights and blockchain audibility.
         </p>
-      </div>
+      </div> 
       
       <div className="buttons flex justify-center items-center gap-3 ">
         <button className='px-5 py-2 bg-green-500 rounded-full text-white cursor-pointer hover:bg-green-400 hover:scale-103 transition-all duration-300 text-xs sm:text-sm'>Start Now</button>
