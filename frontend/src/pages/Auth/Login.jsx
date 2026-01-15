@@ -67,7 +67,8 @@ const Login = () => {
                     <label>Password</label>
                     <input className='px-3 py-2 w-full outline-none border border-zinc-400 rounded-lg text-sm' type="password" placeholder='use a strong one' required />
                 </div>
-                <div className='flex flex-col gap-1 '>
+                {state === 'signup' && (
+                    <div className='flex flex-col gap-1 '>
                     <label>Role (required)</label>
                     <select className='px-3 py-2 w-full outline-none border border-zinc-400 rounded-lg text-sm' name="" id="" required>
                         <option value="select role">select role</option>
@@ -76,6 +77,7 @@ const Login = () => {
                         <option value="approver">approver</option>
                     </select>
                 </div>
+                )}
 
                 <button type='submit' className='px-3 py-2 w-full bg-blue-500 rounded-lg cursor-pointer text-white hover:scale-103 hover:bg-blue-400 transition-all duration-300 font-semibold '>Create Account</button>
                 <p className='text-sm text-center text-zinc-600'>{state === 'signup' ? 'already have an account?' : "don't have an account?"} <span onClick={() => state === 'signup' ? setState('login') : setState('signup')} className='text-blue-500 underline cursor-pointer'>{state === 'signup' ? 'Login' : 'Sign Up'}</span></p>
