@@ -8,6 +8,8 @@ import ApproverDashboard from "./pages/Approver/ApproverDashboard";
 import { AppContext } from "./context/AppContext";
 import DashboardHome from "./pages/Creator/DashboardHome";
 import CreateContract from "./pages/Creator/CreateContract";
+import MyContracts from "./pages/Creator/MyContracts";
+import Profile from "./pages/Creator/Profile";
 
 const App = () => {
   const { token } = useContext(AppContext);
@@ -28,7 +30,9 @@ const App = () => {
         {token && role === "creator" && (
           <Route element={<CreatorDashboard />}>
             <Route index element={<DashboardHome />} />
-            <Route path="create" element={<CreateContract />} />
+            <Route path="contracts/create" element={<CreateContract />} />
+            <Route path="contracts" element={<MyContracts />} />
+            <Route path="profile" element={<Profile />} />
           </Route>
         )}
 
