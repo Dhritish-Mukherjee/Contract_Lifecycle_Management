@@ -1,11 +1,12 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useState } from "react"
 
-export const AppContext = createContext();
+export const AppContext = createContext(null);
 
 const AppContextProvider = (props) => {
 
     const [user, setUser] = useState(null);
-    const [token , setToken] = useState(null);
+    const [token , setToken] = useState(true);
     const [role, setRole] = useState('creator');
 
     const value = {
